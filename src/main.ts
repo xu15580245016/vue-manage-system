@@ -4,6 +4,7 @@ import * as ElementPlusIconsVue from '@element-plus/icons-vue';
 import App from './App.vue';
 import router from './router';
 import { usePermissStore } from './store/permiss';
+import { useThemeStore } from './store/theme';
 import 'element-plus/dist/index.css';
 import './assets/css/icon.css';
 
@@ -15,6 +16,9 @@ app.use(router);
 for (const [key, component] of Object.entries(ElementPlusIconsVue)) {
     app.component(key, component);
 }
+// 初始化主题
+const theme = useThemeStore();
+theme.initTheme();
 // 自定义权限指令
 const permiss = usePermissStore();
 app.directive('permiss', {

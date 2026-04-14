@@ -37,15 +37,15 @@
         </div>
         <el-table class="mgb20" :style="{ width: '100%' }" border :data="tableData" :row-key="rowKey"
             @selection-change="handleSelectionChange" table-layout="auto">
-            <template v-for="item in columns" :key="item.prop">
+            <template v-for="item in columns" :key="item.type || item.prop">
                 <el-table-column v-if="item.visible" :prop="item.prop" :label="item.label" :width="item.width"
                     :type="item.type" :align="item.align || 'center'">
 
-                    <template #default="{ row, column, $index }" v-if="item.type === 'index'">
-                        {{ getIndex($index) }}
-                    </template>
-                    <template #default="{ row, column, $index }" v-if="!item.type">
-                        <slot :name="item.prop" :rows="row" :index="$index">
+                    <template #default="{ row, column, $index }">
+                        <span v-if="item.type === 'index'">
+                            {{ getIndex($index) }}
+                        </span>
+                        <slot v-else :name="item.prop" :rows="row" :index="$index">
                             <template v-if="item.prop == 'operator'">
                                 <el-button type="warning" size="small" :icon="View" @click="viewFunc(row)">
                                     查看
@@ -184,7 +184,7 @@ const handleDelete = (row) => {
 };
 
 const getIndex = (index: number) => {
-    return index + 1 + currentPage.value * pageSize.value
+    return (props.currentPage - 1) * props.pageSize + index + 1
 }
 
 </script>

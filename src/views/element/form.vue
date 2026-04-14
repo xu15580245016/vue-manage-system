@@ -39,7 +39,7 @@
                     <el-form-item label="评分" prop="rate">
                         <el-rate v-model="form.rate" allow-half />
                     </el-form-item>
-                    <el-form-item label="滑块" prop="num">
+                    <el-form-item label="滑块">
                         <el-slider v-model="form.num" :step="1" show-stops :max="10" />
                     </el-form-item>
                     <el-form-item label="开关" prop="delivery">
@@ -50,16 +50,16 @@
                     </el-form-item>
                     <el-form-item label="多选框" prop="type">
                         <el-checkbox-group v-model="form.type">
-                            <el-checkbox label="小明" value="小明" name="type"></el-checkbox>
-                            <el-checkbox label="小红" value="小红" name="type"></el-checkbox>
-                            <el-checkbox label="小白" value="小白" name="type"></el-checkbox>
+                            <el-checkbox label="小明" name="type"></el-checkbox>
+                            <el-checkbox label="小红" name="type"></el-checkbox>
+                            <el-checkbox label="小白" name="type"></el-checkbox>
                         </el-checkbox-group>
                     </el-form-item>
                     <el-form-item label="单选框" prop="resource">
                         <el-radio-group v-model="form.resource">
-                            <el-radio label="小明" value="小明"></el-radio>
-                            <el-radio label="小红" value="小红"></el-radio>
-                            <el-radio label="小白" value="小白"></el-radio>
+                            <el-radio label="小明"></el-radio>
+                            <el-radio label="小红"></el-radio>
+                            <el-radio label="小白"></el-radio>
                         </el-radio-group>
                     </el-form-item>
                     <el-form-item label="穿梭框" prop="transfer">
@@ -153,7 +153,6 @@ const form = reactive({
     num: 1,
     rate: 0,
     transfer: [],
-
 });
 const generateData = () => {
     const data = []
