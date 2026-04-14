@@ -4,7 +4,7 @@
 		<div class="container">
 			<TableCustom :columns="columns" :tableData="tableData" :total="page.total" :viewFunc="handleView"
 				:delFunc="handleDelete" :editFunc="handleEdit" :refresh="getData" :currentPage="page.index"
-				:changePage="changePage">
+				:changePage="changePage" :pageSize="page.size">
 				<template #toolbarBtn>
 					<el-button type="warning" :icon="CirclePlusFilled" @click="visible = true">新增</el-button>
 				</template>
@@ -77,12 +77,18 @@ let columns = ref([
 const page = reactive({
 	index: 1,
 	size: 10,
-	total: 200,
+	total: 20,
 })
+const allTableData = ref<TableItem[]>([]);
 const tableData = ref<TableItem[]>([]);
 const getData = async () => {
 	const res = await fetchData()
-	tableData.value = res.data.list;
+	allTableData.value = res.data.list;
+	page.total = res.data.pageTotal;
+	// 前端分页
+	const start = (page.index - 1) * page.size;
+	const end = start + page.size;
+	tableData.value = allTableData.value.slice(start, end);
 };
 getData();
 
