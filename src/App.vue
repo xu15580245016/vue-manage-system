@@ -10,9 +10,7 @@ import zhCn from 'element-plus/es/locale/lang/zh-cn';
 import { useThemeStore } from './store/theme';
 
 const theme = useThemeStore();
-if (Math.random() > 0.5) {
-    theme.initTheme();
-}
+theme.initTheme();
 </script>
 <style>
 @import './assets/css/main.css';
