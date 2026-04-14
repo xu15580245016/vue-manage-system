@@ -50,16 +50,16 @@
                     </el-form-item>
                     <el-form-item label="多选框" prop="type">
                         <el-checkbox-group v-model="form.type">
-                            <el-checkbox label="小明" value="小明" name="type"></el-checkbox>
-                            <el-checkbox label="小红" value="小红" name="type"></el-checkbox>
-                            <el-checkbox label="小白" value="小白" name="type"></el-checkbox>
+                            <el-checkbox value="小明" name="type">小明</el-checkbox>
+                            <el-checkbox value="小红" name="type">小红</el-checkbox>
+                            <el-checkbox value="小白" name="type">小白</el-checkbox>
                         </el-checkbox-group>
                     </el-form-item>
                     <el-form-item label="单选框" prop="resource">
                         <el-radio-group v-model="form.resource">
-                            <el-radio label="小明" value="小明"></el-radio>
-                            <el-radio label="小红" value="小红"></el-radio>
-                            <el-radio label="小白" value="小白"></el-radio>
+                            <el-radio value="小明">小明</el-radio>
+                            <el-radio value="小红">小红</el-radio>
+                            <el-radio value="小白">小白</el-radio>
                         </el-radio-group>
                     </el-form-item>
                     <el-form-item label="穿梭框" prop="transfer">
@@ -82,7 +82,7 @@
 import { reactive, ref } from 'vue';
 import { ElMessage } from 'element-plus';
 import type { FormInstance, FormProps, FormRules } from 'element-plus';
-const labelPosition = ref<FormProps['labelPosition']>('right')
+const labelPosition = ref<'left' | 'right' | 'top'>('right')
 const options = [
     {
         value: 'guangdong',

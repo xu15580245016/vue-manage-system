@@ -184,7 +184,7 @@ const handleDelete = (row) => {
 };
 
 const getIndex = (index: number) => {
-    return index + 1 + currentPage.value * pageSize.value
+    return index + 1 + (currentPage.value - 1) * pageSize.value
 }
 
 </script>

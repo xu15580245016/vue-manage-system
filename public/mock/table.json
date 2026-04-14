@@ -1,41 +1,25 @@
 {
     "list": [
-        {
-            "id": 1,
-            "name": "张三",
-            "money": 123,
-            "address": "广东省东莞市长安镇",
-            "state": true,
-            "date": "2019-11-1",
-            "thumb": "https://lin-xin.gitee.io/images/post/wms.png"
-        },
-        {
-            "id": 2,
-            "name": "李四",
-            "money": 456,
-            "address": "广东省广州市白云区",
-            "state": true,
-            "date": "2019-10-11",
-            "thumb": "https://lin-xin.gitee.io/images/post/node3.png"
-        },
-        {
-            "id": 3,
-            "name": "王五",
-            "money": 789,
-            "address": "湖南省长沙市",
-            "state": false,
-            "date": "2019-11-11",
-            "thumb": "https://lin-xin.gitee.io/images/post/parcel.png"
-        },
-        {
-            "id": 4,
-            "name": "赵六",
-            "money": 1011,
-            "address": "福建省厦门市鼓浪屿",
-            "state": true,
-            "date": "2019-10-20",
-            "thumb": "https://lin-xin.gitee.io/images/post/notice.png"
-        }
+        {"id": 1, "name": "张三", "money": 123, "address": "广东省东莞市长安镇", "state": true, "date": "2019-11-1", "thumb": "https://lin-xin.gitee.io/images/post/wms.png"},
+        {"id": 2, "name": "李四", "money": 456, "address": "广东省广州市白云区", "state": true, "date": "2019-10-11", "thumb": "https://lin-xin.gitee.io/images/post/node3.png"},
+        {"id": 3, "name": "王五", "money": 789, "address": "湖南省长沙市", "state": false, "date": "2019-11-11", "thumb": "https://lin-xin.gitee.io/images/post/parcel.png"},
+        {"id": 4, "name": "赵六", "money": 1011, "address": "福建省厦门市鼓浪屿", "state": true, "date": "2019-10-20", "thumb": "https://lin-xin.gitee.io/images/post/notice.png"},
+        {"id": 5, "name": "钱七", "money": 1200, "address": "浙江省杭州市西湖区", "state": true, "date": "2019-12-1", "thumb": "https://lin-xin.gitee.io/images/post/wms.png"},
+        {"id": 6, "name": "孙八", "money": 1500, "address": "江苏省南京市鼓楼区", "state": false, "date": "2019-12-5", "thumb": "https://lin-xin.gitee.io/images/post/node3.png"},
+        {"id": 7, "name": "周九", "money": 1800, "address": "四川省成都市锦江区", "state": true, "date": "2019-12-10", "thumb": "https://lin-xin.gitee.io/images/post/parcel.png"},
+        {"id": 8, "name": "吴十", "money": 2100, "address": "湖北省武汉市江汉区", "state": true, "date": "2019-12-15", "thumb": "https://lin-xin.gitee.io/images/post/notice.png"},
+        {"id": 9, "name": "郑十一", "money": 2400, "address": "陕西省西安市雁塔区", "state": false, "date": "2019-12-20", "thumb": "https://lin-xin.gitee.io/images/post/wms.png"},
+        {"id": 10, "name": "陈十二", "money": 2700, "address": "重庆市渝中区", "state": true, "date": "2019-12-25", "thumb": "https://lin-xin.gitee.io/images/post/node3.png"},
+        {"id": 11, "name": "刘一", "money": 3000, "address": "北京市朝阳区", "state": true, "date": "2020-01-01", "thumb": "https://lin-xin.gitee.io/images/post/parcel.png"},
+        {"id": 12, "name": "关二", "money": 3300, "address": "上海市浦东新区", "state": false, "date": "2020-01-05", "thumb": "https://lin-xin.gitee.io/images/post/notice.png"},
+        {"id": 13, "name": "张四", "money": 3600, "address": "天津市和平区", "state": true, "date": "2020-01-10", "thumb": "https://lin-xin.gitee.io/images/post/wms.png"},
+        {"id": 14, "name": "李五", "money": 3900, "address": "山东省青岛市市南区", "state": true, "date": "2020-01-15", "thumb": "https://lin-xin.gitee.io/images/post/node3.png"},
+        {"id": 15, "name": "王六", "money": 4200, "address": "河南省郑州市金水区", "state": false, "date": "2020-01-20", "thumb": "https://lin-xin.gitee.io/images/post/parcel.png"},
+        {"id": 16, "name": "赵七", "money": 4500, "address": "河北省石家庄市桥西区", "state": true, "date": "2020-01-25", "thumb": "https://lin-xin.gitee.io/images/post/notice.png"},
+        {"id": 17, "name": "钱八", "money": 4800, "address": "山西省太原市小店区", "state": true, "date": "2020-02-01", "thumb": "https://lin-xin.gitee.io/images/post/wms.png"},
+        {"id": 18, "name": "孙九", "money": 5100, "address": "辽宁省沈阳市和平区", "state": false, "date": "2020-02-05", "thumb": "https://lin-xin.gitee.io/images/post/node3.png"},
+        {"id": 19, "name": "周十", "money": 5400, "address": "吉林省长春市朝阳区", "state": true, "date": "2020-02-10", "thumb": "https://lin-xin.gitee.io/images/post/parcel.png"},
+        {"id": 20, "name": "吴一", "money": 5700, "address": "黑龙江省哈尔滨市南岗区", "state": true, "date": "2020-02-15", "thumb": "https://lin-xin.gitee.io/images/post/notice.png"}
     ],
-    "pageTotal": 4
+    "pageTotal": 20
 }
